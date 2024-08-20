@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Para utilizar o ejs sendo dinamico, ao escrever com <%- variavel %> você consome os dados -->
+    ============================== <% ceps.forEach(function(cep) { %>
+    <br />
+    <%- cep.cep %> <br />
+    <%- cep.logradouro %> <br />
+    <%- cep.bairro %> <br />
+    <%- cep.localidade %> <br />
+    <%- cep.uf %> <br />
+    <%- cep.ibge %> <br />
+    ============================== <% }); %>
+  </body>
+</html>
